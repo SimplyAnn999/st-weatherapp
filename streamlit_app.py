@@ -1,8 +1,9 @@
 import requests
 import streamlit as st
 
-# ----Web tab config
+# ----Web/tab config
 st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
+showWarningOnDirectExecution = false
 
 # ----WEB HEADER SECTION 1
 st.title("A Minimalist Weather App")
