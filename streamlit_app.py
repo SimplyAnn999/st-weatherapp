@@ -5,8 +5,10 @@ import streamlit as st
 st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
 
 # ----WEB HEADER SECTION 1
-st.title("A Minimalist Weather App")
+st.title("The Minimalist Weather App")
 city = st.text_input("Enter your city : ")
+# The text input box is not empty then only you proceed
+if not city:
 
 # ----API Call/Config
 url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=c8efac34cc3548754ca009222d24da49'.format(city)
