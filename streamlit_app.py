@@ -7,7 +7,6 @@ st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:",
 # ----WEB HEADER SECTION 1
 st.title("The Minimalist Weather App")
 city = st.text_input("Enter your city : ")
-if st.button("Submit"):
 
 # ----WEB HEADER SECTION 2
 st.write('Temperature: {}  degree celsius'.format(temp))
