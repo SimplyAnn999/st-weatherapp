@@ -5,7 +5,7 @@ import streamlit as st
 st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
 hide_error = """
 <style>
-#stException" {
+#message {
   visibility:hidden;
 }
 </style>
