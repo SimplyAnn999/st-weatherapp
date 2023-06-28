@@ -19,9 +19,6 @@ st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:",
 st.title("The Minimalist Weather App")
 city = st.text_input("Enter your city : ")
 
-# The text input box is not empty then only you proceed
-if not city:
-
 # ----WEB HEADER SECTION 2
 st.write('Temperature: {}  degree celsius'.format(temp))
 st.write('wind_speed: {}  m/s' .format(wind_speed))
