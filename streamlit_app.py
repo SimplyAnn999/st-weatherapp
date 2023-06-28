@@ -4,10 +4,6 @@ import streamlit as st
 # ----Web tab config
 st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
 
-#.streamlit/config.toml
-[client]
-showErrorDetails = false
-
 # ----WEB HEADER SECTION 1
 st.title("A Minimalist Weather App")
 city = st.text_input("Enter your city : ")
