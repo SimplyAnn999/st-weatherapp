@@ -1,6 +1,13 @@
 import requests
 import streamlit as st
 
+# ----Web tab config
+st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
+
+# ----WEB HEADER SECTION 1
+st.title("The Minimalist Weather App")
+city = st.text_input("Enter your city : ")
+
 # ----API Call/Config
 url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=c8efac34cc3548754ca009222d24da49'.format(city)
 
@@ -11,13 +18,6 @@ temp = data['main']['temp']
 wind_speed = data['wind']['speed']
 humidity = data['main']['humidity']
 description = data['weather'][0]['description']
-
-# ----Web tab config
-st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
-
-# ----WEB HEADER SECTION 1
-st.title("The Minimalist Weather App")
-city = st.text_input("Enter your city : ")
 
 # ----WEB HEADER SECTION 2
 st.write('Temperature: {}  degree celsius'.format(temp))
