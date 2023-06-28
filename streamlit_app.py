@@ -15,7 +15,7 @@ url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=c8efac34cc3548
 res = requests.get(url)
 data = res.json()
 
-temp = data['main']['temp']
+st.write(data['main']['temp'])
 wind_speed = data['wind']['speed']
 humidity = data['main']['humidity']
 description = data['weather'][0]['description']
