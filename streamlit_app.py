@@ -1,12 +1,20 @@
 import requests
 import streamlit as st
 
-# ----Web tab config
+# ----Web/Tab config
 st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
+hide_error = """
+<style>
+#css-35ezg3 ekqpzhp2 {
+  visibility:hidden;
+}
+</style>
+"""
 
 # ----WEB HEADER SECTION 1
 st.title("The Minimalist Weather App")
 city = st.text_input("Enter your city : ")
+st.markdown(hide_error,unsafe_allow_html=True)
 
 # ----API Call/Config
 url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=c8efac34cc3548754ca009222d24da49'.format(city)
