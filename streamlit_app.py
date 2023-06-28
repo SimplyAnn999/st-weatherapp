@@ -18,9 +18,9 @@ res = requests.get(url)
 data = res.json()
 
 #temp = data['main']['temp']
-wind_speed = data['wind']['speed']
-humidity = data['main']['humidity']
-description = data['weather'][0]['description']
+#wind_speed = data['wind']['speed']
+#humidity = data['main']['humidity']
+#description = data['weather'][0]['description']
 
 # ----WEB HEADER SECTION 2
 st.write('Temperature: {}  degree celsius'.format(temp))
