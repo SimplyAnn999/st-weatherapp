@@ -33,13 +33,6 @@ st.write('wind_speed: {}  m/s' .format(wind_speed))
 st.write('Humidity: {} %' .format(humidity))
 st.write('Clouds:', description)
 
-# ----HEADER SECTION
-st.title("A Minimalist Weather App")
-st.write('Temperature: {}  degree celsius'.format(temp))
-st.write('wind_speed: {}  m/s' .format(wind_speed))
-st.write('Humidity: {} %' .format(humidity))
-st.write('Clouds:', description)
-
 if temp >= 149:
   st.write("You should wear a coat.")
 else:
