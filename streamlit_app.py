@@ -2,11 +2,11 @@ import requests
 import streamlit as st
 
 st.set_page_config(page_title="WeatherApp", page_icon=":sun_behind_rain_cloud:", layout="wide")
+st.subheader ("WeatherApp :sun:")
+st.title("A Minimalist Weather App")
 
 city = input("Enter your city : ")
-
 url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=c8efac34cc3548754ca009222d24da49'.format(city)
-
 res = requests.get(url)
 data = res.json()
 
