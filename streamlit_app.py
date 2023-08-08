@@ -9,11 +9,11 @@ url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=c8efac34cc3548
 res = requests.get(url)
 data = res.json()
 
-temp = st.note("data['main']['temp']")
-wind_speed = st.note("data['wind']['speed']")
-humidity = st.note("data['main']['humidity']")
-clouds = st.note("data['clouds']['all']")
-description = st.note("data['weather'][0]['description']")
+temp = data['main']['temp']
+wind_speed = data['wind']['speed']
+humidity = data['main']['humidity']
+clouds = data['clouds']['all']
+description = data['weather'][0]['description']
 
 st.title("A Minimalist Weather App")
 st.write('Temperature: {}  degree celsius'.format(temp))
