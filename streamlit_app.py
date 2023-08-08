@@ -33,7 +33,7 @@ st.write('wind_speed: {}  m/s' .format(wind_speed))
 st.write('Humidity: {} %' .format(humidity))
 st.write('Clouds:', description)
 
-if temp >= 149:
+if temp <= 149:
   st.write("You should wear a coat.")
 else:
   st.write("It is safe to wear shorts.")
